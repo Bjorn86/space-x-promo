@@ -1,0 +1,9 @@
+@mixin base-text($size, $weight, $color) {
+  font: {
+    family: 'Museo Sans Cyrl', 'Arial', sans-serif;
+    size: $size;
+    weight: $weight;
+  }
+  line-height: normal;
+  color: $color;
+}

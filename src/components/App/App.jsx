@@ -1,6 +1,10 @@
+// IMPORT PACKAGES
 import React from 'react';
 
-// APP CORE COMPONENT
+//IMPORT STYLES
+import './App.scss';
+
+// APP COMPONENT
 function App() {
   return (
     <div className='app__content'>
