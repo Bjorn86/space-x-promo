@@ -1,7 +1,7 @@
 // IMPORT PACKAGES
 import { Link } from 'react-router-dom';
 
-//IMPORT STYLES
+// IMPORT STYLES
 import './Promo.scss';
 
 // PROMO COMPONENT

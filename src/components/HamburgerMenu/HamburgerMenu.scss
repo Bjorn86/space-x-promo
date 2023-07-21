@@ -1,0 +1,41 @@
+.hamburger-menu {
+  width: 520px;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  right: -520px;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 23px 23px 90px;
+  box-sizing: border-box;
+  background-color: $dark-blue;
+  transition: right 0.6s, visibility 0.6s;
+  &_active {
+    right: 0;
+    visibility: visible;
+  }
+  &__btn-close {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 107px;
+    padding: 0;
+    border: none;
+    align-self: flex-end;
+    background: url('../../assets/images/close-icon.svg') center center/contain
+      no-repeat;
+    cursor: pointer;
+    transition: opacity 0.5s;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .hamburger-menu {
+    width: 100%;
+  }
+}

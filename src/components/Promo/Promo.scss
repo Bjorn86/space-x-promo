@@ -30,19 +30,10 @@
     background: linear-gradient(to right, $white 0%, $white 10%, $red 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    clip-path: polygon(
-      0% 100%,
-      0% 0%,
-      100% 0%,
-      100% 8%,
-      93% 75%,
-      60% 91%,
-      92% 100%
-    );
   }
   &__title-uppercase {
     display: block;
-    @include base-text($textXXL, 700, 1, $white);
+    @include base-text($textXXXL, 700, 1, $white);
     text-transform: uppercase;
     letter-spacing: -1.3px;
   }
@@ -132,13 +123,119 @@
   }
   &__text-accent-big {
     margin-top: 21px;
-    font-size: $textXXL;
+    font-size: $textXXXL;
     font-weight: 700;
     line-height: 0.9;
   }
   &__text-accent-small-bold {
     font-size: $textL;
     font-weight: 700;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .promo {
+    &__title {
+      clip-path: polygon(
+        0% 100%,
+        0% 0%,
+        100% 0%,
+        100% 8%,
+        93% 75%,
+        60% 91%,
+        92% 100%
+      );
+    }
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .promo {
+    background: url('../../assets/images/background.jpg') center center/cover
+      no-repeat;
+    &__column {
+      &_position_left {
+        margin-top: 132px;
+      }
+      &_position_right {
+        margin-top: 174px;
+      }
+    }
+    &__title {
+      font-size: $textL;
+    }
+    &__title-uppercase {
+      font-size: $textXXL;
+    }
+    &__btn-start {
+      margin-top: 140px;
+    }
+    &__list {
+      width: 290px;
+    }
+    &__list-item {
+      width: 140px;
+      height: 140px;
+    }
+    &__link {
+      font-size: $textS;
+      &_position_top {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      &_position_bottom {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      &_position_left {
+        padding-right: 0;
+      }
+    }
+    &__text-accent-big {
+      font-size: $textXXL;
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .promo {
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__column {
+      &_position_left {
+        align-items: center;
+        margin-left: 0;
+      }
+      &_position_right {
+        margin-top: 50px;
+        margin-right: 0;
+      }
+    }
+    &__title {
+      text-align: center;
+      background: linear-gradient(
+        to right,
+        $white 0%,
+        $white 10%,
+        $red 50%,
+        $white 90%,
+        $white 100%
+      );
+      background-clip: text;
+    }
+    &__btn-start {
+      margin-top: 20px;
+      margin-left: 0;
+      background: $black-bg;
+    }
+    &__list {
+      width: 300px;
+      gap: 20px;
+    }
+    &__list-item {
+      background: $black-bg;
+    }
   }
 }
 
