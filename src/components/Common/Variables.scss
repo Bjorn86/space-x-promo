@@ -1,15 +1,19 @@
 /* COLORS */
 $white: hsla(0, 0%, 100%, 1);
+$white-bg: hsla(0, 0%, 100%, 0.03);
+$white-shadow: hsla(0, 0%, 100%, 0.1);
+$white-light-shadow: hsla(0, 0%, 100%, 0.7);
 $gray: hsla(0, 0%, 24%, 1);
 $light-gray: hsla(0, 2%, 59%, 1);
 $black: hsla(0, 0%, 0%, 1);
 $dark-blue: hsla(248, 16%, 10%, 1);
 $brown: hsla(27, 91%, 4%, 1);
+$red: hsla(12, 100%, 50%, 1);
 
 /* TEXT SIZE */
 $textXS: 14px;
 $textS: 16px;
 $textM: 18px;
 $textL: 20px;
-$textXL: 46px;
+$textXL: 26px;
 $textXXL: 60px;

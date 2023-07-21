@@ -1,6 +1,9 @@
 // IMPORT PACKAGES
 import React from 'react';
 
+// IMPORT COMPONENTS
+import Promo from '../Promo/Promo.jsx';
+
 //IMPORT STYLES
 import './App.scss';
 
@@ -8,8 +11,7 @@ import './App.scss';
 function App() {
   return (
     <div className='app__content'>
-      <h1 className='title'>Test</h1>
-      <hr />
+      <Promo />
     </div>
   );
 }
